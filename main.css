@@ -1,0 +1,180 @@
+* {
+  background-color: hsl(30, 38%, 92%);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+@font-face {
+  font-family: Montserrat;
+  src: url(Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: Fraunces;
+  src: url(Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+html, body {
+  height: 100%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+  .image1{
+  right: 0;
+  }
+
+  .image2{
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+  
+  }
+
+
+
+.all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 1rem;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.content *,
+.content {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.text > p {
+  padding: 0rem;
+}
+
+.prices {
+  display: flex;
+}
+
+.prices > div {
+  padding: 0;
+}
+
+.prices * {
+  display: flex;
+  padding: 1rem;
+  padding-left: 0;
+  font-family:Fraunces;
+  
+}
+.price-1{
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.price-2{
+  font-size: .75rem;
+  font-family:montserrat;
+  text-decoration: line-through;
+  color:hsl(228, 12%, 48%);
+  align-items: center;
+}
+
+.gab-bold{
+  font-family:Fraunces;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin-top: rem;
+  margin-bottom: 1rem;
+}
+
+.description{
+  color:hsl(228, 12%, 48%);
+  font-size: .82rem;
+}
+
+.cart-button * {
+  display: flex;
+  flex-wrap:wrap;
+  height: auto;
+  margin: 0rem;
+  padding:.4rem;
+  margin-left: 0;
+  font-family:Montserrat;
+  font-weight: 700;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 8px;
+  font-size: .8rem;
+}
+.icon-cart{
+  display: block;
+}
+
+@media (min-width: 376px) {
+  .content {
+    text-align: center;
+    
+    flex-direction: row;
+    padding: 0;
+    
+    
+    border-bottom-left-radius: 10px;  
+  }
+  img {
+    border-top-right-radius: 0;
+  }
+  .image1 {
+    
+    display: none ;
+  }
+  .image2{
+      display:block;
+      height: 423px;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0;
+      object-fit: cover;
+  }
+  .text{
+    max-width: 281px;
+  }
+}
+
+.text{
+  padding: 1.2rem;
+padding-top: 1.2rem;
+padding-bottom: 1.2rem;
+
+
+text-align: start;
+
+}
+
+.top-spaced{
+font-size: .7rem;
+letter-spacing: .3rem;
+color:hsl(228, 12%, 48%);
+}
